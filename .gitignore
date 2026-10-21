@@ -1,0 +1,29 @@
+# Dependências e build
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Variáveis de ambiente (mantém apenas o exemplo)
+.env
+.env.*
+!.env.example
+
+# Banco de dados local
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.idea/
+
+backend/node_modules/
