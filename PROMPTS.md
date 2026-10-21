@@ -1,6 +1,7 @@
 ## Prompt 1
 
 **Ferramenta: ** Claude Sonnet 5.5
+
 **Texto do prompt: ** Quero implementar o backend do desafio de seguir criadoras usando NestJS, TypeScript, TypeORM e SQLite, dentro da pasta backend/.
 Preciso de duas entidades: Creator, com id e name, e Follower, relacionando creatorId e userId, com data de criação. Um usuário não pode seguir a mesma criadora duas vezes. Ao iniciar a aplicação, cadastre a criadora "Ana Criadora", com id "creator-1", caso ela ainda não exista.
 Implemente os endpoints para seguir, deixar de seguir e consultar a quantidade de seguidores, conforme o enunciado. Também crie um endpoint para consultar a criadora pelo id, retornando seu nome, quantidade de seguidores e se o userId informado está seguindo ela.
@@ -15,3 +16,21 @@ Antes de terminar, explique como executar o backend e quais decisões você tomo
 
 **O que estava errado ou faltando, e o que você fez: ** Ainda faltam frontend e testes concretos.
 ** Como você conferiu: ** Testes feitos por meio do Postman.
+
+## Prompt 2
+
+**Ferramenta: ** Claude Sonnet
+
+**Texto do prompt: ** No backend que já existe em backend/, crie testes e2e para a API usando Jest e Supertest.
+Use um banco SQLite em memória para os testes, sem alterar nem utilizar o banco de desenvolvimento. Garanta que a criadora inicial seja cadastrada e que os testes não dependam dos dados deixados por outros testes.
+Cubra os principais cenários: seguir uma criadora, tentar seguir duas vezes, seguir uma criadora inexistente, enviar um userId inválido, deixar de seguir, tentar deixar de seguir sem estar seguindo, conferir a contagem de seguidores em diferentes situações e verificar o campo following no endpoint de consulta.
+Confira também se o script test:e2e está configurado corretamente no package.json. Execute os testes e corrija apenas o que for necessário para fazê-los funcionar, sem mudar as regras da API desnecessariamente.
+Ao terminar, informe quais testes foram executados, se passaram e quais arquivos ou comportamentos precisaram ser ajustados
+
+**Por que este prompt: ** Manter um comando todo só para teste, para manter a integridade do código e verificar se todas as chamadas, funções e salvamento no banco estão seguindo conforme a necessidade do enunciado. Não seria de extrema confiabilidade só contar com chamadas manuais via Postman.
+
+**O que a IA entregou: ** Teste completo no backend.
+
+**O que estava errado ou faltando, e o que você fez: ** Estava faltando configurar o comando no package.json e importar as libs necessárias, resolvidas por meio do comando.
+
+** Como você conferiu: ** Rodando todos os comandos no package.json e revendo através do Postman.
