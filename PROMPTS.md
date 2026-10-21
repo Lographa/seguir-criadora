@@ -34,3 +34,19 @@ Ao terminar, informe quais testes foram executados, se passaram e quais arquivos
 **O que estava errado ou faltando, e o que você fez: ** Estava faltando configurar o comando no package.json e importar as libs necessárias, resolvidas por meio do comando.
 
 ** Como você conferiu: ** Rodando todos os comandos no package.json e revendo através do Postman.
+
+## Prompt 3
+
+**Ferramenta: ** Claude Sonnet
+**Texto do prompt: ** Crie, na pasta frontend/, uma aplicação React com TypeScript com Vite para consumir o backend existente.
+A tela deve mostrar o nome da criadora, a quantidade de seguidores e um botão para seguir ou deixar de seguir. Use fetch para chamar a API, com a URL base configurada em VITE_API_URL (padrão http://localhost:3000), o creatorId creator-1 e um userId fixo de demonstração (user-demo), definido em uma constante.
+Ao carregar a página, consulte GET /creators/creator-1?userId=user-demo para obter os dados iniciais. Ao clicar no botão, use os endpoints existentes de POST e DELETE e atualize a tela conforme a resposta da API.
+Trate o carregamento inicial, erros de rede e respostas HTTP de erro, mostrando uma mensagem na tela. Desabilite o botão enquanto uma requisição estiver em andamento para evitar cliques repetidos.
+Crie frontend/.env.example com a variável VITE_API_URL. Use CSS puro, com um visual simples e organizado, sem adicionar bibliotecas além das necessárias para React e Vite.
+Não altere o backend. Ao terminar, informe como executar o frontend e quais arquivos foram criados.
+
+**Por que este prompt: ** Optei por usar este prompt na parte do front, já pegando dados de teste e dados do primeiro usuário para demonstração. Apenas pedindo para criar uma tela básica com as funções necessárias e testá-las.
+
+**O que a IA entregou: ** Frontend e teste no front.
+**O que estava errado ou faltando, e o que você fez: ** ...
+** Como você conferiu: ** Teste feito para cada resposta de status por meio do próprio prompt.
