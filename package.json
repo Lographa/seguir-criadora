@@ -1,0 +1,18 @@
+{
+  "name": "seguir-criadora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desafio de seguir criadoras: backend NestJS + frontend React. Este package.json só repassa comandos para backend/ e frontend/ (não possui dependências).",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24.11.0"
+  },
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "start:backend": "npm --prefix backend run build && npm --prefix backend start",
+    "dev:backend": "npm --prefix backend run start:dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "test": "npm run test:e2e",
+    "test:e2e": "npm --prefix backend run test:e2e"
+  }
+}

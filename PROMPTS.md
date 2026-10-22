@@ -50,3 +50,19 @@ Não altere o backend. Ao terminar, informe como executar o frontend e quais arq
 **O que a IA entregou: ** Frontend e teste no front.
 **O que estava errado ou faltando, e o que você fez: ** ...
 ** Como você conferiu: ** Teste feito para cada resposta de status por meio do próprio prompt.
+
+## Prompt 4
+
+**Ferramenta: ** Claude Sonnet
+**Texto do prompt: ** Prepare a documentação e os arquivos necessários para executar e entregar o projeto.
+Coloque no README.md na raiz explicando o objetivo do projeto, a stack utilizada, os pré-requisitos e como configurar e executar backend, frontend e testes. Inclua uma tabela com os endpoints, seus objetivos e os principais códigos HTTP retornados.
+Documente também as decisões de negócio adotadas, incluindo os casos 400, 404, 409 e 204, o seed da criadora inicial, o userId fixo de demonstração no frontend e o endpoint adicional de consulta da criadora.
+Revise o .gitignore para garantir que arquivos .env, bancos SQLite locais, node_modules e diretórios de build não sejam versionados, mantendo os arquivos .env.example.
+Se fizer sentido para a estrutura atual, crie um package.json na raiz com scripts simples para executar backend, frontend e testes sem precisar entrar manualmente em cada pasta. Não duplique dependências nem altere os package.json existentes sem necessidade.
+Não altere a lógica funcional da API ou do frontend. Ao terminar, liste os arquivos criados ou modificados e os comandos que você executou para verificar a entrega.
+
+**Por que este prompt: ** Esse último prompt iria resolver toda a parte de documentação e finalização do projeto, revisando o que não precisa ser enviado via gitignore e criando nova configuração global para package.json para facilitar a inicialização do projeto. Além também de documentá-lo no README.md.
+
+**O que a IA entregou: ** Documentação no README, configuração global do package json e revalidade gitignore.
+**O que estava errado ou faltando, e o que você fez: ** Estava faltando documentação e configuração global.
+** Como você conferiu: ** Todo resultado conferido pelo que foi entregue do comando pela IA.
