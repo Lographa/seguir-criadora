@@ -67,5 +67,19 @@ Não altere a lógica funcional da API ou do frontend. Ao terminar, liste os arq
 **O que estava errado ou faltando, e o que você fez: ** Estava faltando documentação e configuração global.
 ** Como você conferiu: ** Todo resultado conferido pelo que foi entregue do comando pela IA.
 
-**Decisões que tomei: ** Tomei a decisão de dividir a implementação por etapas, com cada prompt para cada parte do projeto, para manter um controle sobre o que está sendo feito e facilitar o acompanhamento das alterações.
+## Prompt 5
+
+**Ferramenta: ** Claude Sonnet
+**Texto do prompt: ** Revise o projeto completo antes da entrega. Confira se o backend, frontend e os testes estão funcionando.Execute os testes automatizados e verifique se as instruções do README permitem configurar e executar o projeto.
+Corrija apenas problemas reais que encontrar, mantendo o escopo e as decisões de negócio existentes. Não adicione funcionalidades nem refatore código que já funciona sem necessidade.
+Ao terminar, informe quais verificações executou, os resultados obtidos, os arquivos alterados e o que ainda precisa de conferência manual. Não declare nenhuma verificação como aprovada se ela não tiver sido executada.
+
+**Por que este prompt: ** Para verificar se todos os testes necessários foram feitos, se ainda existe algum ponto necessário a ser revisado.
+**O que a IA entregou: ** Teste total do código.
+**O que estava errado ou faltando, e o que você fez: ** Nada
+** Como você conferiu: ** Através do resultado entregue pelo prompt no final.
+
+Decisões que tomei: Tomei a decisão de dividir a implementação por etapas, com cada prompt para cada parte do projeto, para manter um controle sobre o que está sendo feito e facilitar o acompanhamento das alterações.
 Em cada prompt, tentei seguir uma regra de que o que ele deve usar, detalhes da implementação, configurações, requisitos, organização, execução apenas do que for pedido para evitar alterações fora do escopo e dizer o que foi feito e como ativar o código. Para criação do prompt, eu usei site de checagem de ortografia para facilitar a leitura do prompt. Mantive o uso do Claude Sonnet por ser o mais robusto e pelo tempo para criar o projeto.
+
+O que não verifiquei: Todo sistema só foi feito na versão Node 26.3.1 e npm 11.16.0. Não tive tempo para testar em outras anteriores. Passando uns 20 minutos depois do tempo limite.
