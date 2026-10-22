@@ -66,3 +66,6 @@ Não altere a lógica funcional da API ou do frontend. Ao terminar, liste os arq
 **O que a IA entregou: ** Documentação no README, configuração global do package json e revalidade gitignore.
 **O que estava errado ou faltando, e o que você fez: ** Estava faltando documentação e configuração global.
 ** Como você conferiu: ** Todo resultado conferido pelo que foi entregue do comando pela IA.
+
+**Decisões que tomei: ** Tomei a decisão de dividir a implementação por etapas, com cada prompt para cada parte do projeto, para manter um controle sobre o que está sendo feito e facilitar o acompanhamento das alterações.
+Em cada prompt, tentei seguir uma regra de que o que ele deve usar, detalhes da implementação, configurações, requisitos, organização, execução apenas do que for pedido para evitar alterações fora do escopo e dizer o que foi feito e como ativar o código. Para criação do prompt, eu usei site de checagem de ortografia para facilitar a leitura do prompt. Mantive o uso do Claude Sonnet por ser o mais robusto e pelo tempo para criar o projeto.
